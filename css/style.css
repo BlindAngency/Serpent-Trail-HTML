@@ -6655,8 +6655,8 @@ body .booked-modal .booked-form{
 	padding-top: 8.3571em;
 	padding-bottom: 8.0714em;
 }
-.general_info_section .column-1_3:first-child{ background-color: #1dc6df; }
-.general_info_section .column-1_3:nth-child(2){ background-color: #1cbed6; }
+.general_info_section .column-1_3:first-child{ background-color: #1dc6df;}
+.general_info_section .column-1_3:nth-child(2){ background-color: #1cbed6;}
 .general_info_section .column-1_3:last-child{ background-color: #1bbad2; }
 .general_info_section .gi_block .sc_title{ color: #ffffff; }
 .gi_block{
@@ -6665,7 +6665,8 @@ body .booked-modal .booked-form{
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 2em;
-}
+} 
+
 
 /* Galleries */
 .tpl_gallery_section{
