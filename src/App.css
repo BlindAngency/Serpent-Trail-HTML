@@ -1,0 +1,571 @@
+
+/* src/App.css */
+/* index.css or App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.App {
+  text-align: center;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  margin-top: 20px;
+  color: black;
+}
+
+.App {
+box-sizing: border-box;
+
+}
+
+/* LandingPage styles */
+.LandingPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/img/pexels-louis-2101187.jpg'); /* Background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.header {
+  margin-top: 100px;
+  color: black;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  color: #000 !important;
+}
+
+/* Footer Section */
+.footer {
+  margin-bottom: 0px;
+}
+
+.footer button {
+  padding: 25px 85px !important;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px !important;
+  font-weight: 210;
+  background-color:aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer button:hover {
+  background-color: aliceblue;
+}
+
+.footer button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .footer button {
+    padding: 27px 50px;
+    font-size: 1rem;
+  }
+}
+
+.select-time-page { 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw; /* Ensure full screen width */
+  background-image: url('/img/pexels-pixabay-355482.jpg');
+  background-size: cover; /* Make sure the image covers the full screen */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Avoid repeating the background */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.header h2 {
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-picker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.time-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.time-control button {
+  background-color: aliceblue;
+  color: #070707;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.time-control span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*h1, h2 {
+  /*color: black;]
+}*/
+.main-content {
+  flex: 1; /* Take up remaining space between header and footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px !important;
+  font-weight: 210;
+  background-color:aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+} 
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-left: 10px;
+}
+/* welcome page */
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-start; /* Align the content at the top */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 0 20px;
+  transition: background-image 0.5s ease;
+}
+.main-content {
+  padding-top: 20px; /* Add space from the top of the page */
+  width: 100%;
+  max-width: 600px; /* Optional: limit the width for better readability */
+}
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote h1 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 0;
+  font-weight: 600; /* Font weight */
+  margin-bottom: 8px; /* Small space between quote and author */
+  padding: 0; /* Remove extra padding */
+}
+
+
+.author {
+  font-size: 1rem;
+  margin-top: 0; /* No top margin to keep it close to the quote */
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 260px;
+}
+
+
+
+@media (min-width: 768px) {
+  .quote h1 {
+    font-size: 3rem;
+  }
+}
+
+.welcome-footer {
+  display: flex;
+  justify-content:center; /* Align icons closer to the center */
+  gap: 55px; /* Adjust space between icons */
+  padding: 5px; /* Reduce padding */
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.welcome-footer button {
+  background: none;
+  border: none;
+  font-size: 21px; /* Reduce the icon size */
+  color: white;
+  cursor: pointer;
+  padding: 5px; /* Adjust button padding */
+  align-content: center !important;
+}
+
+/* Drop-up Menu Styles */ 
+.drop-up-menu {
+  position: fixed;
+  bottom: 60px; /* Adjust based on your footer height */
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px); /* Apply blur */
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+            border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  z-index: 999;
+  animation: slide-up 0.3s ease-in-out;
+}
+
+.drop-up-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 13px 8px;
+  gap: 20px; /* Adds space between the icon and the text */
+  padding: 10px;
+  background: white;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Animation for the menu to slide up */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Favorite.js*/
+.favorite-quotes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-start; /* Align the content at the top */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 0 20px;
+  transition: background-image 0.5s ease;
+
+}
+.favorite-quotes h1{
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 0;
+  font-weight: 600; /* Font weight */
+  margin-bottom: 8px; /* Small space between quote and author */
+  padding: 0; /* Remove extra padding */
+}
+.favQ-footer{
+  display: flex;
+  justify-content:center; /* Align icons closer to the center */
+  gap: 55px; /* Adjust space between icons */
+  padding: 5px; /* Reduce padding */
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center !important;
+}
+.favorite-quotes button{
+  background: none;
+  border: none;
+  font-size: 21px; /* Reduce the icon size */
+  color:white;
+  cursor: pointer;
+  padding: 5px; /* Adjust button padding */
+  align-items: center !important;
+}
+.drop-up-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 13px 8px;
+  gap: 20px; /* Adds space between the icon and the text */
+  padding: 10px;
+  background: white;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* Privacy Policy*/
+
+.privacy-policy{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-start; /* Align the content at the top */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 0 10px;
+  transition: background-image 0.5s ease;
+  background-color: #fbfbfb;
+  font-family: 'Roboto Slab', serif;
+  scrollbar-width: 8px;
+}
+.policy-section{
+  align-items:baseline;
+}
+.privacy-policy-content {
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: auto; /* Enables vertical scroll */
+  padding: 20px;
+  margin: 0 auto;
+}
+.prButton{
+  background-color: #fbfbfb;
+}
+
+/* Media queries for responsive design */
+
+/* Styles for tablets (screens smaller than 768px) */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .footer button {
+    padding: 15px 50px;
+    font-size: 1rem;
+    gap: 25px;
+  }
+
+  .quote h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-footer {
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  .drop-up-menu button {
+    font-size: 28px;
+    padding: 40px;
+    width: 100%;
+  }
+}
+/* for screens minimum windth of 330*/
+@media (max-width: 330px) {
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .footer button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+
+  .quote h1 {
+    font-size: 1.2rem;
+  }
+
+  .drop-up-menu button {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .welcome-footer {
+    font-size: 16px;
+  }
+}
+
+/* Styles for mobile phones (screens smaller than 480px) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .footer button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+
+  .quote h1 {
+    font-size: 1.2rem;
+  }
+
+  .drop-up-menu button {
+    font-size: 18px;
+    padding: 25px;
+  }
+
+  .welcome-footer {
+    gap: 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 720px) {
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .footer button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+
+  .quote h1 {
+    font-size: 1.2rem;
+  }
+
+  .drop-up-menu button {
+    font-size: 20px;
+    padding: 40px;
+  }
+
+  .welcome-footer {
+    gap: 20px;
+    font-size: 16px;
+  }
+}
+
+/* Styles for larger screens (desktop, screens larger than 1024px) */
+@media (min-width: 1024px) {
+  .header h1 {
+    font-size: 3.5rem;
+  }
+
+  .header p {
+    font-size: 1.5rem;
+  }
+
+  .footer button {
+    padding: 30px 100px;
+    font-size: 1.2rem;
+    gap: 50px;
+  }
+
+  .welcome-footer {
+    gap: 70px;
+    font-size: 24px;
+  }
+
+  .drop-up-menu {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .quote h1 {
+    font-size: 3.5rem;
+  }
+
+  .privacy-policy-content {
+    max-height: 500px;
+  }
+}
